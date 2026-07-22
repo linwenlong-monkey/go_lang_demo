@@ -1,7 +1,6 @@
 package main
 
 //匿名返回值和命名返回值配合defer修复修改
-
 func add(a, b int) (result int) {
 	defer func() {
 		result += 10
@@ -16,8 +15,6 @@ func add1(a, b int) (int) {
 	}()
 	return a + b
 }
-
-
 
 
 
